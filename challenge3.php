@@ -20,7 +20,7 @@
     $lifeTime = $birthTime->diff($currentTime);
 
     //00 years 0 months 0 days 08 hours 0 minutes 0 seconds.
-    echo $interval->format("%Y years %m months %d days %H hours %i minutes %s seconds.");
+    echo $lifeTime->format("%Y years, %m months, %d days, %H hours, %i minutes & %s seconds.");
 
     ?>
 </body>
