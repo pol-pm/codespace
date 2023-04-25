@@ -10,15 +10,18 @@
 
 <body>
     <?php
-    //date in mm/dd/yyyy format; or it can be in other formats as well
-    $birthDate = "11/14/1981";
-    //explode the date to get month, day and year
-    $birthDate = explode("/", $birthDate);
-    //get age from date or birthdate
-    $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[0], $birthDate[1], $birthDate[2]))) > date("md")
-        ? ((date("Y") - $birthDate[2]) - 1)
-        : (date("Y") - $birthDate[2]));
-    echo "Age is: " . $age;
+    // current time
+    $currentTimwe = new DateTime();
+
+    // time of birth
+    $birthTime = new DateTime("1981-11-14 22:00:00");
+
+    // difference
+    $lifeTime = $cutrrentTime->diff($birthTime);
+
+    //00 years 0 months 0 days 08 hours 0 minutes 0 seconds.
+    echo $interval->format("%Y years %m months %d days %H hours %i minutes %s seconds.");
+
     ?>
 </body>
 
