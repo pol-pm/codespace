@@ -11,13 +11,13 @@
 <body>
     <?php
     // current time
-    $currentTimwe = new DateTime();
+    $currentTime = new DateTime();
 
     // time of birth
     $birthTime = new DateTime("1981-11-14 22:00:00");
 
     // difference
-    $lifeTime = $cutrrentTime->diff($birthTime);
+    $lifeTime = $birthTime->diff($currentTime);
 
     //00 years 0 months 0 days 08 hours 0 minutes 0 seconds.
     echo $interval->format("%Y years %m months %d days %H hours %i minutes %s seconds.");
