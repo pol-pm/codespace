@@ -81,8 +81,8 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`student_id`, `student_surname`, `student_firstname`, `student_email`) VALUES
-('ab1001', 'Poleszak', 'Jacek', 'jacek@poleszak.com'),
-('ab1002', 'Campbell', 'Stuart', 's.c@yahoo.com');
+('ab1001', 'Poleszak', 'Jacek', 'j.p@email.com'),
+('ab1002', 'Campbell', 'Stuart', 's.c@email.com');
 
 --
 -- Indexes for dumped tables
